@@ -186,10 +186,15 @@
     margin-bottom: 1.5rem;
   }
 
+  .footer-col {
+    text-align: center !important;
+  }
+
   .footer-col:first-child {
     grid-column: auto;
     padding-bottom: 1.2rem;
     border-bottom: 1px solid rgba(201, 151, 58, 0.2);
+    text-align: left !important;
   }
 
   .footer-col h4 {
