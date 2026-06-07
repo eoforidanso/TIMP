@@ -1,0 +1,228 @@
+.mentor-recruitment {
+  padding: 100px 0;
+  background: linear-gradient(135deg, rgba(13, 27, 42, 0.05), rgba(201, 151, 58, 0.03));
+  position: relative;
+  overflow: hidden;
+}
+
+.mentor-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mentor-header .section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(201, 151, 58, 0.1);
+  border: 1px solid rgba(201, 151, 58, 0.3);
+  padding: 0.4rem 1.2rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.mentor-header h2 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--navy);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.mentor-header p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 1.5rem auto 0;
+  line-height: 1.8;
+}
+
+.mentor-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.benefit-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-align: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.mentor-impact {
+  background: linear-gradient(135deg, rgba(201, 151, 58, 0.1), rgba(201, 151, 58, 0.05));
+  border: 1px solid rgba(201, 151, 58, 0.2);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mentor-impact h3 {
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.impact-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.impact-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+}
+
+.impact-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.mentor-cta {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.mentor-cta h3 {
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.mentor-cta .btn {
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mentor-recruitment {
+    padding: 70px 0;
+  }
+
+  .mentor-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .mentor-benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .benefit-card {
+    padding: 1.5rem;
+  }
+
+  .mentor-impact {
+    padding: 2rem 1.5rem;
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mentor-recruitment {
+    padding: 60px 0;
+  }
+
+  .mentor-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    padding: 1.2rem;
+  }
+
+  .mentor-impact {
+    padding: 1.5rem 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mentor-impact h3 {
+    font-size: 1.3rem;
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .impact-number {
+    font-size: 1.6rem;
+  }
+
+  .impact-label {
+    font-size: 0.7rem;
+  }
+
+  .mentor-cta {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .mentor-cta h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .mentor-cta .btn {
+    font-size: 0.9rem;
+    padding: 0.9rem 2rem;
+  }
+}
