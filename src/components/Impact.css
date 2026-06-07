@@ -1,0 +1,201 @@
+.impact {
+  position: relative;
+  padding: 100px 0;
+  background: var(--cream);
+}
+
+.impact-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.impact-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(201,151,58,0.1) 0%, transparent 70%);
+}
+
+.impact-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+.impact-header h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--navy);
+  margin-bottom: 0.8rem;
+}
+
+.impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.metric {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+.metric::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+}
+.metric:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.12);
+}
+
+.metric-gold {
+  border-color: rgba(201,151,58,0.3);
+}
+.metric-gold::before { background: var(--gold); }
+
+.metric-green {
+  border-color: rgba(45,106,79,0.3);
+}
+.metric-green::before { background: var(--green); }
+
+.metric-navy {
+  border-color: rgba(13,27,42,0.3);
+}
+.metric-navy::before { background: var(--navy); }
+
+.metric-red {
+  border-color: rgba(193,18,31,0.3);
+}
+.metric-red::before { background: var(--red); }
+
+.metric-num {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.metric-gold .metric-num { color: var(--gold); }
+.metric-green .metric-num { color: var(--green); }
+.metric-navy .metric-num { color: var(--navy); }
+.metric-red .metric-num { color: var(--red); }
+
+.metric-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.impact-stories {
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+.impact-stories h3 {
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.story-card {
+  background: var(--white);
+  border: 1px solid rgba(201,151,58,0.15);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+.story-card:hover {
+  border-color: rgba(201,151,58,0.35);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.story-text {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.story-text::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  font-size: 2rem;
+  color: var(--gold);
+  opacity: 0.3;
+  line-height: 0;
+  top: 0;
+}
+
+.story-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.author-avatar {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.story-author strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+}
+.story-author span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.impact-cta {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.impact-cta p {
+  font-size: 1.15rem;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .stories-grid { grid-template-columns: 1fr; }
+  .metric-num { font-size: 2rem; }
+}
