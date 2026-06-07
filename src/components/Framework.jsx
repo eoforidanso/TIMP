@@ -5,30 +5,34 @@ export default function Framework() {
     {
       letter: 'T',
       title: 'Time, Transition & Trust',
-      desc: 'We invest real, consistent time. Our mentors commit to regular touchpoints, not sporadic advice. Building trust is the foundation.',
+      value: 'Consistent mentorship builds lasting relationships.',
+      desc: 'We invest real, consistent time. Our mentors commit to regular touchpoints, building trust as the foundation of growth.',
       bullets: ['Weekly mentorship sessions', 'Personal relationship building', 'Trust-based accountability'],
-      color: 'gold'
+      icon: '⏰'
     },
     {
       letter: 'I',
       title: 'Integration, Insight & Industry',
-      desc: 'We help mentees understand new systems and connect with industry professionals. Insight comes from lived experience; industry comes from networks.',
-      bullets: ['Navigating workplace culture', 'Professional network access', 'Industry mentors & guides'],
-      color: 'green'
+      value: 'Your network is your net worth.',
+      desc: 'We help mentees understand new systems and connect with industry professionals who share their background.',
+      bullets: ['Navigating workplace culture', 'Professional network access', 'Industry connections'],
+      icon: '🌐'
     },
     {
       letter: 'M',
       title: 'Mentorship, Momentum & Mobility',
-      desc: 'We build momentum through structured skill-building and career planning. Mobility means moving up, not just staying in place.',
+      value: 'Strategic planning accelerates career growth.',
+      desc: 'We build momentum through structured skill-building and career planning designed for upward mobility.',
       bullets: ['Career coaching & planning', 'Skill development roadmaps', 'Advancement strategies'],
-      color: 'navy'
+      icon: '📈'
     },
     {
       letter: 'P',
       title: 'Progress, Peak Potential & Professional Growth',
-      desc: 'We measure success not by checkboxes but by peak potential realized. What does full potential look like for each mentee? That\'s our north star.',
-      bullets: ['Goal tracking & milestones', 'Professional development', 'Long-term success planning'],
-      color: 'red'
+      value: 'Success is measured by your full potential.',
+      desc: 'We measure growth not by checkboxes, but by helping you realize your peak potential and long-term success.',
+      bullets: ['Goal tracking & milestones', 'Professional development', 'Long-term career planning'],
+      icon: '⭐'
     },
   ];
 
@@ -51,11 +55,12 @@ export default function Framework() {
 
         <div className="pillars-grid fade-up d1">
           {pillars.map((p, i) => (
-            <div className={`pillar pillar-${p.color}`} key={p.letter}>
-              <div className="pillar-header">
-                <span className="pillar-letter">{p.letter}</span>
-                <h3>{p.title}</h3>
-              </div>
+            <div className="pillar-card" key={p.letter}>
+              <div className="pillar-accent" style={{animationDelay: `${i * 0.1}s`}} />
+              <div className="pillar-icon">{p.icon}</div>
+              <div className="pillar-letter">{p.letter}</div>
+              <h3 className="pillar-title">{p.title}</h3>
+              <p className="pillar-value">{p.value}</p>
               <p className="pillar-desc">{p.desc}</p>
               <ul className="pillar-bullets">
                 {p.bullets.map((b, j) => (
