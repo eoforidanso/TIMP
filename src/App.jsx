@@ -2,11 +2,15 @@ import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import WhyTimpWorks from './components/WhyTimpWorks';
 import Framework from './components/Framework';
 import Programs from './components/Programs';
-import WhyTimpWorks from './components/WhyTimpWorks';
+import MenteeJourney from './components/MenteeJourney';
 import Impact from './components/Impact';
+import MentorDashboard from './components/MentorDashboard';
+import GlobalImpact from './components/GlobalImpact';
 import MentorRecruitment from './components/MentorRecruitment';
+import ResourceLibrary from './components/ResourceLibrary';
 import Contact from './components/Contact';
 import FooterCTA from './components/FooterCTA';
 import Footer from './components/Footer';
@@ -60,8 +64,12 @@ function App() {
       <WhyTimpWorks />
       <Framework />
       <Programs />
+      <MenteeJourney />
       <Impact />
+      <MentorDashboard />
+      <GlobalImpact />
       <MentorRecruitment />
+      <ResourceLibrary />
       <Contact />
       <FooterCTA />
       <Footer />

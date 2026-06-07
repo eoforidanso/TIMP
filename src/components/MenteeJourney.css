@@ -1,0 +1,247 @@
+.mentee-journey {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--cream) 0%, rgba(45, 106, 79, 0.03) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.journey-header h2 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--navy);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.journey-header p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 1.5rem auto 0;
+  line-height: 1.8;
+}
+
+.journey-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.journey-phase {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.journey-phase:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.journey-phase::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  border-radius: 20px 20px 0 0;
+}
+
+.phase-gold::before {
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+
+.phase-green::before {
+  background: linear-gradient(90deg, var(--green), var(--green-light));
+}
+
+.phase-navy::before {
+  background: linear-gradient(90deg, var(--navy), var(--navy-mid));
+}
+
+.phase-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.phase-header {
+  margin-bottom: 1.5rem;
+}
+
+.phase-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.journey-phase h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+  font-weight: 800;
+}
+
+.phase-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 600;
+}
+
+.phase-steps {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.step-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.step-text {
+  font-weight: 500;
+}
+
+.phase-outcome {
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(201, 151, 58, 0.2);
+  text-align: center;
+}
+
+.phase-outcome p {
+  font-size: 0.95rem;
+  color: var(--gold);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.journey-cta {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.journey-cta h3 {
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.journey-cta .btn {
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mentee-journey {
+    padding: 70px 0;
+  }
+
+  .journey-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .journey-timeline {
+    gap: 1.5rem;
+  }
+
+  .journey-phase {
+    padding: 2rem 1.5rem;
+  }
+
+  .phase-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .journey-phase h3 {
+    font-size: 1.3rem;
+  }
+
+  .step-item {
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mentee-journey {
+    padding: 60px 0;
+  }
+
+  .journey-timeline {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .journey-phase {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .phase-icon {
+    font-size: 2rem;
+  }
+
+  .journey-phase h3 {
+    font-size: 1.1rem;
+  }
+
+  .journey-header h2 {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+  }
+
+  .journey-cta {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .journey-cta h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .journey-cta .btn {
+    font-size: 0.9rem;
+    padding: 0.9rem 2rem;
+  }
+}

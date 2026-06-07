@@ -12,10 +12,6 @@ export default function Hero() {
         <div className="hero-wrapper">
           <div className="hero-left fade-up d1">
             <div className="hero-eyebrow">
-              <span className="flag gh" />
-              <span className="flag us" />
-              <span className="flag ca" />
-              <span className="flag gb" />
               <span className="eyebrow-text">Empowering Young Immigrants Ages 18–30</span>
             </div>
 
