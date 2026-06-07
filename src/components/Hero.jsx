@@ -9,46 +9,75 @@ export default function Hero() {
       </div>
 
       <div className="container hero-content">
-        <div className="hero-eyebrow fade-up">
-          <span className="flag gh" />
-          <span className="flag us" />
-          <span className="flag ca" />
-          <span className="flag gb" />
-          <span className="eyebrow-text">Empowering Young Immigrants Ages 18–30</span>
-        </div>
-
-        <h1 className="hero-title fade-up d1">
-          We Invest Time.<br />
-          We Guide the <span className="gold-text">Climb.</span><br />
-          We Build Careers.
-        </h1>
-
-        <p className="hero-sub fade-up d2">
-          The Immigrant Mentorship Project pairs first-generation immigrants with
-          trained mentors who walk beside them through transition, integration,
-          and early career development.
-        </p>
-
-        <div className="hero-acronym fade-up d3">
-          {[
-            { letter: 'T', label: 'Time · Transition · Trust' },
-            { letter: 'I', label: 'Integration · Insight · Industry' },
-            { letter: 'M', label: 'Mentorship · Momentum · Mobility' },
-            { letter: 'P', label: 'Progress · Peak Potential · Professional Growth' },
-          ].map(({ letter, label }) => (
-            <div className="acronym-item" key={letter}>
-              <span className="acronym-letter">{letter}</span>
-              <span className="acronym-label">{label}</span>
+        <div className="hero-wrapper">
+          <div className="hero-left fade-up d1">
+            <div className="hero-eyebrow">
+              <span className="flag gh" />
+              <span className="flag us" />
+              <span className="flag ca" />
+              <span className="flag gb" />
+              <span className="eyebrow-text">Empowering Young Immigrants Ages 18–30</span>
             </div>
-          ))}
+
+            <h1 className="hero-title">
+              We Invest Time.<br />
+              We Build <span className="gold-text">Careers.</span>
+            </h1>
+
+            <p className="hero-sub">
+              Mentorship for first-generation immigrants navigating transition, integration, and early career growth.
+            </p>
+
+            <div className="hero-actions">
+              <a href="#contact" className="btn btn-primary">Apply as a Mentee ↗</a>
+              <a href="#contact" className="btn btn-outline">Become a Mentor</a>
+            </div>
+          </div>
+
+          <div className="hero-right fade-up d2">
+            <div className="hero-visual">
+              <svg viewBox="0 0 400 500" className="hero-graphic">
+                {/* Gradient definition */}
+                <defs>
+                  <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#c99738" stopOpacity="0.4" />
+                    <stop offset="50%" stopColor="#c99738" stopOpacity="0.2" />
+                    <stop offset="100%" stopColor="#1b2f45" stopOpacity="0.1" />
+                  </linearGradient>
+                  <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="#c99738" stopOpacity="0.3" />
+                    <stop offset="100%" stopColor="#c99738" stopOpacity="0" />
+                  </radialGradient>
+                </defs>
+
+                {/* Background glow */}
+                <circle cx="200" cy="250" r="180" fill="url(#glowGradient)" className="glow-circle" />
+
+                {/* Globe */}
+                <circle cx="200" cy="250" r="120" fill="url(#globeGradient)" stroke="rgba(201,151,58,0.3)" strokeWidth="2" />
+
+                {/* Climbing figure silhouette */}
+                <g className="climber" transform="translate(200, 150)">
+                  <circle r="12" fill="rgba(201,151,58,0.8)" />
+                  <path d="M 0 12 L -15 35 M 0 12 L 15 35 M -15 35 L -20 60 M 15 35 L 20 60" stroke="rgba(201,151,58,0.6)" strokeWidth="3" strokeLinecap="round" />
+                </g>
+
+                {/* Upward motion lines */}
+                <g className="motion-lines" opacity="0.4">
+                  <path d="M 150 200 Q 160 180 170 160" stroke="rgba(201,151,58,0.3)" strokeWidth="2" fill="none" strokeLinecap="round" />
+                  <path d="M 200 200 Q 210 170 220 140" stroke="rgba(201,151,58,0.3)" strokeWidth="2" fill="none" strokeLinecap="round" />
+                  <path d="M 250 200 Q 240 170 230 140" stroke="rgba(201,151,58,0.3)" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </g>
+
+                {/* Concentric circles for depth */}
+                <circle cx="200" cy="250" r="100" fill="none" stroke="rgba(201,151,58,0.15)" strokeWidth="1" />
+                <circle cx="200" cy="250" r="80" fill="none" stroke="rgba(201,151,58,0.1)" strokeWidth="1" />
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div className="hero-actions fade-up d4">
-          <a href="#contact" className="btn btn-primary">Apply as Mentee ↗</a>
-          <a href="#contact" className="btn btn-outline">Become a Mentor</a>
-        </div>
-
-        <div className="hero-stats fade-up d5">
+        <div className="hero-stats fade-up d3">
           {[
             { n: '500+', label: 'Immigrants Served' },
             { n: '200+', label: 'Trained Mentors' },
