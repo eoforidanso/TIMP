@@ -7,10 +7,12 @@ import Framework from './components/Framework';
 import Programs from './components/Programs';
 import MenteeJourney from './components/MenteeJourney';
 import Impact from './components/Impact';
+import SuccessCounter from './components/SuccessCounter';
 import MentorDashboard from './components/MentorDashboard';
 import GlobalImpact from './components/GlobalImpact';
 import MentorRecruitment from './components/MentorRecruitment';
 import ResourceLibrary from './components/ResourceLibrary';
+import NewsletterSignup from './components/NewsletterSignup';
 import Contact from './components/Contact';
 import FooterCTA from './components/FooterCTA';
 import Footer from './components/Footer';
@@ -66,10 +68,12 @@ function App() {
       <Programs />
       <MenteeJourney />
       <Impact />
+      <SuccessCounter />
       <MentorDashboard />
       <GlobalImpact />
       <MentorRecruitment />
       <ResourceLibrary />
+      <NewsletterSignup />
       <Contact />
       <FooterCTA />
       <Footer />

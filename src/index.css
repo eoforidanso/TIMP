@@ -44,14 +44,35 @@ a { text-decoration: none; color: inherit; }
   .section { padding: 70px 0; }
 }
 
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 600px) {
-  .container { padding: 0 1.2rem; }
-  .section { padding: 60px 0; }
+  .container { padding: 0 1rem; }
+  .section { padding: 50px 0; }
+
+  .btn {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .container { padding: 0 1rem; }
-  .section { padding: 50px 0; }
+  .container { padding: 0 0.8rem; }
+  .section { padding: 40px 0; }
+
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  h3 { font-size: 1.2rem !important; }
+
+  .btn {
+    padding: 0.65rem 1.2rem;
+    font-size: 0.75rem;
+  }
 }
 
 .tag {

@@ -1,0 +1,199 @@
+.success-counter {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.success-counter::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(201, 151, 58, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.counter-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.counter-header h2 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--white);
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.counter-header p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.counters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+.counter-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .counter-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.counter-card:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
+  border-color: rgba(201, 151, 58, 0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.counter-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.counter-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.counter-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.counter-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.counter-subtitle strong {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .success-counter {
+    padding: 60px 0;
+  }
+
+  .counter-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .counter-header h2 {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+  }
+
+  .counter-header p {
+    font-size: 1rem;
+  }
+
+  .counters-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counter-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .counter-value {
+    font-size: 2.5rem;
+  }
+
+  .counter-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .success-counter {
+    padding: 50px 0;
+  }
+
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .counter-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .counter-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .counter-value {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .counter-label {
+    font-size: 0.75rem;
+  }
+
+  .counter-subtitle {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}

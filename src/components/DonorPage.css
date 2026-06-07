@@ -1,0 +1,338 @@
+.donor-page {
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--cream) 0%, rgba(45, 106, 79, 0.03) 100%);
+}
+
+.donor-hero {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 3rem 0;
+}
+
+.donor-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  color: var(--navy);
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.donor-hero p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+  line-height: 1.7;
+}
+
+.btn-large {
+  font-size: 1.05rem;
+  padding: 1.1rem 2.8rem;
+}
+
+.donor-section {
+  margin-bottom: 4rem;
+}
+
+.donor-section h2 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--navy);
+  margin-bottom: 3rem;
+  font-weight: 800;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.level-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  border: 2px solid rgba(201, 151, 58, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.level-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+}
+
+.level-card h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.level-amount {
+  font-size: 1.8rem;
+  color: var(--gold);
+  font-weight: 800;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1.5rem;
+}
+
+.level-benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.level-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.checkmark {
+  color: var(--green);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.btn-small {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-size: 0.9rem;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-small:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201, 151, 58, 0.3);
+}
+
+.impact-section {
+  margin-bottom: 3rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.impact-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.impact-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.impact-value {
+  font-size: 1.8rem;
+  color: var(--gold);
+  font-weight: 800;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+}
+
+.impact-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.donor-cta {
+  text-align: center;
+  padding: 3.5rem 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.donor-cta h2 {
+  font-size: 2.2rem;
+  color: var(--navy);
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+}
+
+.donor-cta p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  font-size: 0.95rem;
+  padding: 1rem 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .donor-page {
+    padding: 40px 0;
+  }
+
+  .donor-hero {
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+  }
+
+  .donor-hero h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+  }
+
+  .donor-section h2 {
+    margin-bottom: 2rem;
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+  }
+
+  .benefits-grid {
+    gap: 1.5rem;
+  }
+
+  .levels-grid {
+    gap: 1.5rem;
+  }
+
+  .impact-grid {
+    gap: 1.5rem;
+  }
+
+  .cta-buttons {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .donor-page {
+    padding: 30px 0;
+  }
+
+  .donor-hero {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .donor-hero h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+  }
+
+  .donor-hero p {
+    font-size: 1rem;
+    margin: 0.8rem auto 1.5rem;
+  }
+
+  .donor-section h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .benefits-grid,
+  .levels-grid,
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .level-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .donor-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .donor-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .donor-cta p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
