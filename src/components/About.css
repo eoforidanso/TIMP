@@ -11,6 +11,8 @@
   font-size: clamp(2rem, 4vw, 3.2rem);
   color: var(--navy);
   margin-bottom: 0.8rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 .about-header .divider {
   margin-left: auto;
@@ -33,16 +35,16 @@
 }
 .about-card {
   background: var(--white);
-  border-radius: var(--radius);
+  border-radius: 16px;
   padding: 2rem;
-  border: 1px solid rgba(201,151,58,0.15);
-  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 .about-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(201,151,58,0.35);
-  box-shadow: 0 16px 48px rgba(13,27,42,0.12);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .about-icon {
@@ -57,9 +59,11 @@
 .about-icon.career { background: linear-gradient(135deg, rgba(13,27,42,0.3), rgba(27,47,69,0.1)); }
 
 .about-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--navy);
   margin-bottom: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
 }
 .about-card p {
   font-size: 0.95rem;
@@ -72,15 +76,18 @@
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
   align-items: center;
-  background: linear-gradient(135deg, rgba(201,151,58,0.08) 0%, transparent 100%);
-  border: 1px solid rgba(201,151,58,0.15);
-  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(201, 151, 58, 0.04));
+  border: 1px solid rgba(201, 151, 58, 0.1);
+  border-radius: 16px;
   padding: 2.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 .mission-text h3 {
   font-size: 1.8rem;
   color: var(--navy);
   margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 .mission-text p {
   color: var(--text-muted);
@@ -101,14 +108,13 @@
   position: relative;
 }
 .mission-text li::before {
-  content: '';
+  content: '✓';
   position: absolute;
   left: 0;
-  top: 8px;
-  width: 6px;
-  height: 6px;
-  background: var(--gold);
-  border-radius: 50%;
+  top: 0;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .mission-stat {
