@@ -104,7 +104,7 @@
 
 .programs-cta {
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 2.5rem;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(201, 151, 58, 0.04));
   border: 1px solid rgba(201, 151, 58, 0.1);
   border-radius: 16px;
@@ -126,9 +126,158 @@
   margin-right: auto;
 }
 
+@media (max-width: 1024px) {
+  .programs {
+    padding: 70px 0;
+  }
+
+  .programs-header {
+    margin-bottom: 3rem;
+  }
+
+  .programs-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+  }
+
+  .programs-grid {
+    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .programs {
+    padding: 60px 0;
+  }
+
+  .programs-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .programs-header h2 {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+  }
+
+  .programs-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .program-card {
+    padding: 1.5rem;
+  }
+
+  .program-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .program-badge {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .program-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .program-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .program-points li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.3rem;
+  }
+
+  .programs-cta {
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .programs-cta h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .programs-cta p {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
 @media (max-width: 600px) {
+  .programs {
+    padding: 50px 0;
+  }
+
+  .programs-header {
+    margin-bottom: 2rem;
+  }
+
+  .programs-header h2 {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+  }
+
   .programs-grid {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
-  .program-card { padding: 1.8rem; }
+
+  .program-card {
+    padding: 1.2rem;
+  }
+
+  .program-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .program-badge {
+    font-size: 0.55rem;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+
+  .program-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .program-desc {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .program-points li {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    padding-left: 1.2rem;
+  }
+
+  .btn-full {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.8rem;
+  }
+
+  .programs-cta {
+    padding: 1.5rem 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .programs-cta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .programs-cta p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
 }

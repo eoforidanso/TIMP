@@ -2,19 +2,21 @@
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 1.25rem 0;
+  padding: 1.25rem 1.5rem;
   transition: background 0.3s, box-shadow 0.3s, padding 0.3s;
 }
 .navbar.scrolled {
   background: rgba(13,27,42,0.97);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 24px rgba(0,0,0,0.18);
-  padding: 0.85rem 0;
+  padding: 0.85rem 1.5rem;
 }
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
 }
 .nav-logo {
   font-family: 'Playfair Display', serif;
@@ -62,17 +64,102 @@
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 860px) {
-  .hamburger { display: flex; }
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .navbar.scrolled {
+    padding: 0.75rem 0;
+  }
+
+  .nav-logo {
+    font-size: 1.4rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
   .nav-links {
     display: none;
-    position: absolute;
-    top: 100%; left: 0; right: 0;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: var(--navy);
     flex-direction: column;
-    padding: 1.5rem;
-    gap: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 1.5rem 1rem;
+    gap: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    overflow-y: auto;
+    z-index: 999;
   }
-  .nav-links.open { display: flex; }
-  .nav-links li a { color: var(--white); font-size: 1rem; }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-links li a:hover {
+    color: var(--gold);
+  }
+
+  .nav-cta {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem !important;
+    display: block;
+    font-size: 0.9rem !important;
+    border: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.9rem 0;
+  }
+
+  .navbar.scrolled {
+    padding: 0.6rem 0;
+  }
+
+  .nav-logo {
+    font-size: 1.2rem;
+    letter-spacing: -0.3px;
+  }
+
+  .hamburger {
+    gap: 4px;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+  }
+
+  .nav-links {
+    top: 56px;
+    padding: 1.2rem 0.8rem;
+    gap: 0.6rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.5rem;
+  }
+
+  .nav-cta {
+    margin-top: 0.8rem;
+    padding: 0.7rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
 }

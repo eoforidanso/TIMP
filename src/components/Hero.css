@@ -7,6 +7,10 @@
   padding: 120px 0 80px;
 }
 
+.hero .container {
+  width: 100%;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -199,6 +203,32 @@
   50% { opacity: 1; transform: scaleY(1) translateY(0); }
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 90vh;
+    padding: 100px 0 60px;
+  }
+
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-visual {
+    max-width: 320px;
+    height: 420px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 5vw, 3.2rem);
+  }
+
+  .hero-stats {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 968px) {
   .hero-wrapper {
     grid-template-columns: 1fr;
@@ -213,31 +243,184 @@
     max-width: 300px;
     height: 400px;
   }
+
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero {
-    padding: 80px 0 60px;
+    padding: 60px 0 50px;
+    min-height: auto;
+  }
+
+  .hero-wrapper {
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-left {
+    max-width: 100%;
   }
 
   .hero-title {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 1rem;
   }
 
   .hero-sub {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .hero-actions {
-    flex-direction: column;
-  }
-
-  .hero-actions .btn {
-    justify-content: center;
+  .hero-visual {
+    max-width: 250px;
+    height: 350px;
   }
 
   .hero-stats {
     gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .hero-stat strong {
+    font-size: 1.8rem;
+  }
+
+  .hero-actions {
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 0 40px;
+    min-height: auto;
+  }
+
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-eyebrow {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .eyebrow-text {
+    font-size: 0.7rem;
+  }
+
+  .flag {
+    width: 18px;
+    height: 12px;
+  }
+
+  .hero-sub {
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
     flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .hero-actions .btn {
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+    padding-top: 1.2rem;
+    flex-direction: column;
+  }
+
+  .hero-stat strong {
+    font-size: 1.4rem;
+  }
+
+  .hero-stat span {
+    font-size: 0.7rem;
+  }
+
+  .hero-visual {
+    max-width: 180px;
+    height: 250px;
+  }
+
+  .hero-scroll-indicator {
+    bottom: 0.8rem;
+  }
+
+  .hero-scroll-indicator span {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 0 30px;
+  }
+
+  .hero-wrapper {
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    margin-bottom: 0.6rem;
+    line-height: 1.1;
+  }
+
+  .hero-eyebrow {
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .gold-text {
+    font-size: 0.9em;
+  }
+
+  .hero-sub {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-actions {
+    gap: 0.5rem;
+  }
+
+  .hero-actions .btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.78rem;
+  }
+
+  .hero-stats {
+    gap: 0.8rem;
+    padding-top: 1rem;
+  }
+
+  .hero-stat strong {
+    font-size: 1.2rem;
+  }
+
+  .hero-visual {
+    max-width: 150px;
+    height: 220px;
   }
 }

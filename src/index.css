@@ -34,6 +34,26 @@ a { text-decoration: none; color: inherit; }
 .container { max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; }
 .section { padding: 100px 0; }
 
+@media (max-width: 1024px) {
+  .container { padding: 0 1.5rem; }
+  .section { padding: 80px 0; }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 1.5rem; }
+  .section { padding: 70px 0; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 1.2rem; }
+  .section { padding: 60px 0; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .section { padding: 50px 0; }
+}
+
 .tag {
   display: inline-block;
   font-size: 0.68rem;
@@ -88,3 +108,19 @@ a { text-decoration: none; color: inherit; }
 .d3 { animation-delay: 0.3s; }
 .d4 { animation-delay: 0.45s; }
 .d5 { animation-delay: 0.55s; }
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .section { padding: 60px 0; }
+
+  h1, h2, h3, h4 { line-height: 1.15; }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  .tag {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+}

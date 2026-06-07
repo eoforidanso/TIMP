@@ -41,6 +41,8 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .about-card:hover {
   transform: translateY(-8px);
@@ -144,10 +146,181 @@
   line-height: 1.7;
 }
 
+@media (max-width: 1024px) {
+  .about {
+    padding: 70px 0;
+  }
+
+  .about-header {
+    margin-bottom: 3rem;
+  }
+
+  .about-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+  }
+
+  .about-grid {
+    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about-header {
+    margin-bottom: 3rem;
+  }
+
+  .about-header h2 {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+  }
+
+  .about-lead {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .about-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+
   .about-mission {
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 2rem 1.5rem;
   }
-  .big-number { font-size: 3rem; }
+
+  .mission-text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .mission-text p {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .mission-text li {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .big-number {
+    font-size: 3rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .mission-stat p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 50px 0;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+  }
+
+  .about-header h2 {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+  }
+
+  .about-lead {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .about-grid {
+    gap: 1.2rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-card {
+    padding: 1.2rem;
+  }
+
+  .about-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.8rem;
+  }
+
+  .about-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .about-mission {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1.2rem;
+  }
+
+  .mission-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .mission-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .mission-text li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.8rem;
+  }
+
+  .mission-stat {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(201, 151, 58, 0.1);
+  }
+
+  .big-number {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+
+  .mission-stat p {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
 }
