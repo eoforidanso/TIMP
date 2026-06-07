@@ -12,6 +12,8 @@
   font-size: clamp(2rem, 4vw, 3.2rem);
   color: var(--navy);
   margin-bottom: 0.8rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .programs-grid {
@@ -22,19 +24,19 @@
 }
 
 .program-card {
-  background: var(--cream);
-  border: 1px solid rgba(201,151,58,0.2);
-  border-radius: var(--radius);
+  background: var(--white);
+  border: none;
+  border-radius: 16px;
   padding: 2.5rem;
-  transition: all 0.35s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   display: flex;
   flex-direction: column;
 }
 .program-card:hover {
-  border-color: rgba(201,151,58,0.45);
   transform: translateY(-8px);
-  box-shadow: 0 16px 48px rgba(13,27,42,0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .program-icon {
@@ -60,9 +62,11 @@
 }
 
 .program-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--navy);
   margin-bottom: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
 }
 
 .program-desc {
@@ -101,14 +105,17 @@
 .programs-cta {
   text-align: center;
   padding: 3rem;
-  background: linear-gradient(135deg, rgba(201,151,58,0.08) 0%, rgba(45,106,79,0.08) 100%);
-  border: 1px solid rgba(201,151,58,0.15);
-  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(201, 151, 58, 0.04));
+  border: 1px solid rgba(201, 151, 58, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 .programs-cta h3 {
   font-size: 1.8rem;
   color: var(--navy);
   margin-bottom: 0.8rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 .programs-cta p {
   font-size: 1rem;
