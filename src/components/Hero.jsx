@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Clock from './Clock';
 import './Hero.css';
 
 export default function Hero() {
@@ -232,43 +233,7 @@ export default function Hero() {
           <div className="hero-right fade-up d2">
             <div className="hero-visual">
               <div className="hero-visual-bg" />
-              <svg viewBox="0 0 400 500" className="hero-graphic">
-                {/* Gradient definition */}
-                <defs>
-                  <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#c99738" stopOpacity="0.4" />
-                    <stop offset="50%" stopColor="#c99738" stopOpacity="0.2" />
-                    <stop offset="100%" stopColor="#1b2f45" stopOpacity="0.1" />
-                  </linearGradient>
-                  <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="#c99738" stopOpacity="0.3" />
-                    <stop offset="100%" stopColor="#c99738" stopOpacity="0" />
-                  </radialGradient>
-                </defs>
-
-                {/* Background glow */}
-                <circle cx="200" cy="250" r="180" fill="url(#glowGradient)" className="glow-circle" />
-
-                {/* Globe */}
-                <circle cx="200" cy="250" r="120" fill="url(#globeGradient)" stroke="rgba(201,151,58,0.3)" strokeWidth="2" />
-
-                {/* Climbing figure silhouette */}
-                <g className="climber" transform="translate(200, 150)">
-                  <circle r="12" fill="rgba(201,151,58,0.8)" />
-                  <path d="M 0 12 L -15 35 M 0 12 L 15 35 M -15 35 L -20 60 M 15 35 L 20 60" stroke="rgba(201,151,58,0.6)" strokeWidth="3" strokeLinecap="round" />
-                </g>
-
-                {/* Upward motion lines */}
-                <g className="motion-lines" opacity="0.4">
-                  <path d="M 150 200 Q 160 180 170 160" stroke="rgba(201,151,58,0.3)" strokeWidth="2" fill="none" strokeLinecap="round" />
-                  <path d="M 200 200 Q 210 170 220 140" stroke="rgba(201,151,58,0.3)" strokeWidth="2" fill="none" strokeLinecap="round" />
-                  <path d="M 250 200 Q 240 170 230 140" stroke="rgba(201,151,58,0.3)" strokeWidth="2" fill="none" strokeLinecap="round" />
-                </g>
-
-                {/* Concentric circles for depth */}
-                <circle cx="200" cy="250" r="100" fill="none" stroke="rgba(201,151,58,0.15)" strokeWidth="1" />
-                <circle cx="200" cy="250" r="80" fill="none" stroke="rgba(201,151,58,0.1)" strokeWidth="1" />
-              </svg>
+              <Clock />
             </div>
           </div>
         </div>
