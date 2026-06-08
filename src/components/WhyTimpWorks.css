@@ -75,6 +75,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .reason-card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+}
+
 .reason-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -104,6 +111,15 @@
   }
 }
 
+@media (max-width: 480px) {
+  .reason-stat-badge {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    margin-bottom: 0.9rem;
+  }
+}
+
 .reason-stat {
   font-size: 1.7rem;
   font-weight: 800;
@@ -117,6 +133,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .reason-stat {
+    font-size: 1.2rem;
+  }
+}
+
 .reason-stat-label {
   font-size: 0.6rem;
   font-weight: 700;
@@ -124,6 +146,7 @@
   letter-spacing: 0.8px;
   margin-top: 0.2rem;
   word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 600px) {
@@ -133,11 +156,20 @@
   }
 }
 
+@media (max-width: 480px) {
+  .reason-stat-label {
+    font-size: 0.5rem;
+    letter-spacing: 0.3px;
+  }
+}
+
 .reason-card h3 {
   font-size: 1.25rem;
   color: var(--navy);
   margin-bottom: 0.8rem;
   font-weight: 700;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 600px) {
@@ -147,17 +179,34 @@
   }
 }
 
+@media (max-width: 480px) {
+  .reason-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .reason-description {
   font-size: 0.9rem;
   color: var(--text-muted);
   margin-bottom: 1.2rem;
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 600px) {
   .reason-description {
     font-size: 0.85rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reason-description {
+    font-size: 0.78rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
   }
 }
 

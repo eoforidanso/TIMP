@@ -66,6 +66,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .journey-phase {
+    padding: 1.3rem 1rem;
+  }
+}
+
 .journey-phase:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -106,6 +112,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .phase-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .phase-header {
   margin-bottom: 1.2rem;
 }
@@ -124,6 +137,7 @@
   letter-spacing: 0.8px;
   color: var(--gold);
   margin-bottom: 0.3rem;
+  word-break: break-word;
 }
 
 @media (max-width: 600px) {
@@ -133,11 +147,20 @@
   }
 }
 
+@media (max-width: 480px) {
+  .phase-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.3px;
+  }
+}
+
 .journey-phase h3 {
   font-size: 1.4rem;
   color: var(--navy);
   margin-bottom: 0.2rem;
   font-weight: 800;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 600px) {
@@ -147,16 +170,34 @@
   }
 }
 
+@media (max-width: 480px) {
+  .journey-phase h3 {
+    font-size: 1rem;
+    margin-bottom: 0.15rem;
+  }
+}
+
 .phase-subtitle {
   font-size: 0.8rem;
   color: var(--text-muted);
   margin: 0;
   font-weight: 600;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 @media (max-width: 600px) {
   .phase-subtitle {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    letter-spacing: -0.3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .phase-subtitle {
+    font-size: 0.65rem;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -186,6 +227,15 @@
     gap: 0.6rem;
     margin-bottom: 0.6rem;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .step-item {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.4;
   }
 }
 
@@ -231,11 +281,20 @@
   margin: 0;
   letter-spacing: 0.2px;
   line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 600px) {
   .phase-outcome p {
     font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .phase-outcome p {
+    font-size: 0.72rem;
+    letter-spacing: -0.2px;
   }
 }
 
