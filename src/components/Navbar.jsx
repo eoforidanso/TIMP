@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -11,25 +12,31 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const links = ['About', 'Framework', 'Programs', 'Impact', 'Team', 'Contact'];
+  const navLinks = [
+    { label: 'Home', path: '/' },
+    { label: 'Programs', path: '/programs' },
+    { label: 'Impact', path: '/impact' },
+    { label: 'Resources', path: '/resources' },
+    { label: 'Contact', path: '/contact' }
+  ];
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-inner container">
-        <a href="#hero" className="nav-logo">
+        <Link to="/" className="nav-logo">
           <span className="logo-t">T</span>IMP
-        </a>
+        </Link>
 
         <ul className={`nav-links${menuOpen ? ' open' : ''}`}>
-          {links.map(l => (
-            <li key={l}>
-              <a href={`#${l.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{l}</a>
+          {navLinks.map(link => (
+            <li key={link.label}>
+              <Link to={link.path} onClick={() => setMenuOpen(false)}>{link.label}</Link>
             </li>
           ))}
           <li>
-            <a href="#contact" className="btn btn-primary nav-cta" onClick={() => setMenuOpen(false)}>
+            <Link to="/join-us" className="btn btn-primary nav-cta" onClick={() => setMenuOpen(false)}>
               Join Us
-            </a>
+            </Link>
           </li>
         </ul>
 
