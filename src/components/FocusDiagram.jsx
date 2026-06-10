@@ -38,11 +38,11 @@ export default function FocusDiagram() {
     const nodeRadius = 4;
     const centerSpacing = width / 2;
 
-    // Gold color to match TIMP theme
-    const goldColor = '#c9973a';
-    const nodeColor = 'rgba(201, 151, 58, 0.6)';
-    const lineColor = 'rgba(201, 151, 58, 0.3)';
-    const highlightColor = '#c9973a';
+    // 70s retro orange to match TIMP theme
+    const orangeColor = '#D07A3A';
+    const nodeColor = 'rgba(208, 122, 58, 0.6)';
+    const lineColor = 'rgba(208, 122, 58, 0.3)';
+    const highlightColor = '#D07A3A';
 
     // Draw left side (scattered - no focus)
     const leftCenterX = centerSpacing * 0.25;

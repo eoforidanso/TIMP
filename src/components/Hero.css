@@ -38,7 +38,7 @@
 }
 
 .video-1 {
-  background: radial-gradient(circle at 30% 60%, rgba(201, 151, 58, 0.3), transparent 50%);
+  background: radial-gradient(circle at 30% 60%, rgba(208, 122, 58, 0.3), transparent 50%);
   animation: cinematicFlow1 12s ease-in-out infinite;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .video-3 {
-  background: linear-gradient(135deg, rgba(201, 151, 58, 0.1) 0%, transparent 50%);
+  background: linear-gradient(135deg, rgba(208, 122, 58, 0.1) 0%, transparent 50%);
   animation: cinematicFlow3 18s ease-in-out infinite;
   animation-delay: -6s;
 }
@@ -157,7 +157,7 @@
 .eyebrow-text {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--gold);
+  color: #D07A3A;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
@@ -201,16 +201,16 @@
 }
 
 .gold-text {
-  color: var(--gold);
+  color: #D07A3A;
   font-style: italic;
 }
 
 .hero-story {
   margin-top: 2.5rem;
   padding: 2.5rem 2rem;
-  background: linear-gradient(135deg, rgba(201, 151, 58, 0.15), rgba(45, 106, 79, 0.1));
+  background: linear-gradient(135deg, rgba(208, 122, 58, 0.15), rgba(45, 106, 79, 0.1));
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(201, 151, 58, 0.4);
+  border: 2px solid rgba(208, 122, 58, 0.4);
   border-radius: 16px;
   animation: storyFadeIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   max-width: 700px;
@@ -245,6 +245,39 @@
   line-height: 1.75;
 }
 
+.hero-quote {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(208, 122, 58, 0.2), rgba(45, 106, 79, 0.12));
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(208, 122, 58, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  max-width: 550px;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  color: var(--white);
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.quote-text strong {
+  color: #D07A3A;
+  font-weight: 700;
+}
+
+.quote-subtext {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -253,13 +286,13 @@
 
 .btn-glow {
   position: relative;
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  box-shadow: 0 0 20px rgba(201, 151, 58, 0);
+  background: linear-gradient(135deg, #D07A3A, var(--gold-light));
+  box-shadow: 0 0 20px rgba(208, 122, 58, 0);
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .btn-glow:hover {
-  box-shadow: 0 0 30px rgba(201, 151, 58, 0.5), 0 8px 20px rgba(201, 151, 58, 0.2);
+  box-shadow: 0 0 30px rgba(208, 122, 58, 0.5), 0 8px 20px rgba(208, 122, 58, 0.2);
   transform: translateY(-3px);
 }
 
@@ -300,7 +333,7 @@
 .hero-visual-bg {
   position: absolute;
   inset: -50px;
-  background: radial-gradient(circle, rgba(201, 151, 58, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(208, 122, 58, 0.1) 0%, transparent 70%);
   border-radius: 50%;
   animation: parallaxPulse 6s ease-in-out infinite;
   z-index: -1;
@@ -380,7 +413,7 @@
 .hero-stat {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(201, 151, 58, 0.2);
+  border: 1px solid rgba(208, 122, 58, 0.2);
   border-radius: 16px;
   padding: 2rem 1.5rem;
   display: flex;
@@ -393,7 +426,7 @@
 
 .hero-stat:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
-  border-color: var(--gold);
+  border-color: #D07A3A;
   transform: translateY(-8px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
@@ -402,7 +435,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--gold);
+  color: #D07A3A;
   line-height: 1;
   margin-bottom: 0.8rem;
 }
@@ -482,10 +515,10 @@
 }
 
 .dot.active {
-  background: var(--gold);
+  background: #D07A3A;
   width: 28px;
   border-radius: 5px;
-  box-shadow: 0 0 12px rgba(201, 151, 58, 0.4);
+  box-shadow: 0 0 12px rgba(208, 122, 58, 0.4);
 }
 
 .carousel-hint {
@@ -517,7 +550,7 @@
   height: 45px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(201, 151, 58, 0.3);
+  border: 1px solid rgba(208, 122, 58, 0.3);
   border-radius: 12px;
   font-size: 1.2rem;
   cursor: pointer;
@@ -529,13 +562,13 @@
 
 .control-btn:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
-  border-color: var(--gold);
+  border-color: #D07A3A;
   transform: scale(1.1);
 }
 
 .control-btn.active {
-  border-color: var(--gold);
-  box-shadow: 0 0 20px rgba(201, 151, 58, 0.3);
+  border-color: #D07A3A;
+  box-shadow: 0 0 20px rgba(208, 122, 58, 0.3);
 }
 
 /* Sound Indicator */
@@ -575,6 +608,7 @@
 .hero.reduced-motion .hero-title .word,
 .hero.reduced-motion .hero-eyebrow,
 .hero.reduced-motion .hero-sub,
+.hero.reduced-motion .hero-quote,
 .hero.reduced-motion .hero-actions,
 .hero.reduced-motion .hero-stat,
 .hero.reduced-motion .hero-story {
@@ -621,7 +655,7 @@
   display: block;
   width: 2px;
   height: 50px;
-  background: linear-gradient(to bottom, var(--gold), rgba(201, 151, 58, 0));
+  background: linear-gradient(to bottom, #D07A3A, rgba(208, 122, 58, 0));
   margin: 0 auto;
   animation: scrollDown 2s ease-in-out infinite;
   border-radius: 1px;
@@ -721,6 +755,19 @@
     margin-bottom: 1.5rem;
   }
 
+  .hero-quote {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+
+  .quote-subtext {
+    font-size: 0.9rem;
+  }
+
   .hero-visual {
     max-width: 250px;
     height: 350px;
@@ -811,7 +858,7 @@
   .carousel-item {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(201, 151, 58, 0.2);
+    border: 1px solid rgba(208, 122, 58, 0.2);
     border-radius: 16px;
     padding: 2rem 1.5rem;
     min-height: 140px;
@@ -853,6 +900,19 @@
     font-size: 0.85rem;
     margin-bottom: 1.2rem;
     line-height: 1.5;
+  }
+
+  .hero-quote {
+    margin: 1.2rem 0;
+    padding: 1.2rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .quote-subtext {
+    font-size: 0.85rem;
   }
 
   .hero-actions {
