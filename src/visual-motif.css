@@ -35,8 +35,8 @@
     45deg,
     transparent,
     transparent 35px,
-    rgba(201, 151, 58, 0.03) 35px,
-    rgba(201, 151, 58, 0.03) 70px
+    rgba(208, 122, 58, 0.03) 35px,
+    rgba(208, 122, 58, 0.03) 70px
   );
   pointer-events: none;
   z-index: 0;
@@ -49,7 +49,7 @@
   left: 0;
   right: 0;
   height: 200px;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,100 Q300,0 600,120 T1200,100 L1200,200 L0,200 Z' fill='rgba(201,151,58,0.05)'/%3E%3Cpath d='M0,120 Q400,20 800,140 T1200,110 L1200,200 L0,200 Z' fill='rgba(201,151,58,0.03)'/%3E%3C/svg%3E") no-repeat bottom;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,100 Q300,0 600,120 T1200,100 L1200,200 L0,200 Z' fill='rgba(208,122,58,0.05)'/%3E%3Cpath d='M0,120 Q400,20 800,140 T1200,110 L1200,200 L0,200 Z' fill='rgba(208,122,58,0.03)'/%3E%3C/svg%3E") no-repeat bottom;
   background-size: cover;
   opacity: 0.6;
   z-index: 0;
@@ -93,8 +93,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(0deg, transparent 24%, rgba(201, 151, 58, 0.03) 25%, rgba(201, 151, 58, 0.03) 26%, transparent 27%, transparent 74%, rgba(201, 151, 58, 0.03) 75%, rgba(201, 151, 58, 0.03) 76%, transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, rgba(201, 151, 58, 0.03) 25%, rgba(201, 151, 58, 0.03) 26%, transparent 27%, transparent 74%, rgba(201, 151, 58, 0.03) 75%, rgba(201, 151, 58, 0.03) 76%, transparent 77%, transparent);
+    linear-gradient(0deg, transparent 24%, rgba(208, 122, 58, 0.03) 25%, rgba(208, 122, 58, 0.03) 26%, transparent 27%, transparent 74%, rgba(208, 122, 58, 0.03) 75%, rgba(208, 122, 58, 0.03) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(208, 122, 58, 0.03) 25%, rgba(208, 122, 58, 0.03) 26%, transparent 27%, transparent 74%, rgba(208, 122, 58, 0.03) 75%, rgba(208, 122, 58, 0.03) 76%, transparent 77%, transparent);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: 0;
@@ -155,8 +155,8 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(201, 151, 58, 0.2), rgba(201, 151, 58, 0.1));
-  border: 1px solid rgba(201, 151, 58, 0.3);
+  background: linear-gradient(135deg, rgba(208, 122, 58, 0.2), rgba(208, 122, 58, 0.1));
+  border: 1px solid rgba(208, 122, 58, 0.3);
   border-radius: 50%;
   backdrop-filter: blur(10px);
   font-size: 1.5rem;
@@ -252,5 +252,5 @@
   stroke: var(--gold);
   stroke-width: 2;
   fill: none;
-  filter: drop-shadow(0 4px 12px rgba(201, 151, 58, 0.3));
+  filter: drop-shadow(0 4px 12px rgba(208, 122, 58, 0.3));
 }

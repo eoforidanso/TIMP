@@ -95,7 +95,7 @@
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 2.5rem 2rem;
-  border: 2px solid rgba(201, 151, 58, 0.2);
+  border: 2px solid rgba(208, 122, 58, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   transition: all 0.4s ease;
   display: flex;
@@ -161,7 +161,7 @@
 
 .btn-small:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(201, 151, 58, 0.3);
+  box-shadow: 0 8px 24px rgba(208, 122, 58, 0.3);
 }
 
 .impact-section {

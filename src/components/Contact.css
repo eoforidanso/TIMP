@@ -12,7 +12,7 @@
 .contact-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(13,27,42,0.04), rgba(201,151,58,0.08));
+  background: linear-gradient(135deg, rgba(13,27,42,0.04), rgba(208,122,58,0.08));
 }
 .contact-pattern {
   position: absolute;
@@ -106,7 +106,7 @@
 .social-links a {
   font-size: 0.85rem;
   padding: 0.4rem 0.8rem;
-  border: 1px solid rgba(201,151,58,0.25);
+  border: 1px solid rgba(208,122,58,0.25);
   border-radius: 100px;
   transition: all 0.2s;
 }
@@ -150,7 +150,7 @@
   padding: 0.9rem 1.2rem;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(201, 151, 58, 0.2);
+  border: 1px solid rgba(208, 122, 58, 0.2);
   border-radius: 12px;
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
@@ -170,7 +170,7 @@
   outline: none;
   border-color: var(--gold);
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 0 3px rgba(201, 151, 58, 0.15), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 3px rgba(208, 122, 58, 0.15), inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .form-group textarea {

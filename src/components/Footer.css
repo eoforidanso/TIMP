@@ -71,7 +71,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(201,151,58,0.4);
+  border: 1px solid rgba(208,122,58,0.4);
   border-radius: 50%;
   font-size: 0.9rem;
   color: rgba(255,255,255,0.7);
@@ -85,7 +85,7 @@
 
 .footer-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(201,151,58,0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(208,122,58,0.3), transparent);
   margin: 2rem 0;
 }
 
@@ -193,7 +193,7 @@
   .footer-col:first-child {
     grid-column: auto;
     padding-bottom: 1.2rem;
-    border-bottom: 1px solid rgba(201, 151, 58, 0.2);
+    border-bottom: 1px solid rgba(208, 122, 58, 0.2);
     text-align: left !important;
   }
 

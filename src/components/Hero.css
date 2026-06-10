@@ -106,7 +106,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 70% 50%, rgba(201,151,58,0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 70% 50%, rgba(208,122,58,0.12) 0%, transparent 70%);
   animation: parallaxGlow 8s ease-in-out infinite;
   z-index: 1;
 }
@@ -126,8 +126,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(201,151,58,0.04) 39px, rgba(201,151,58,0.04) 40px),
-    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(201,151,58,0.04) 39px, rgba(201,151,58,0.04) 40px);
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(208,122,58,0.04) 39px, rgba(208,122,58,0.04) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(208,122,58,0.04) 39px, rgba(208,122,58,0.04) 40px);
   z-index: 2;
 }
 

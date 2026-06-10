@@ -55,9 +55,9 @@
   height: 48px;
   border-radius: 12px;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, rgba(201,151,58,0.2), rgba(45,106,79,0.2));
+  background: linear-gradient(135deg, rgba(208,122,58,0.2), rgba(45,106,79,0.2));
 }
-.about-icon.time { background: linear-gradient(135deg, rgba(201,151,58,0.3), rgba(232,184,75,0.1)); }
+.about-icon.time { background: linear-gradient(135deg, rgba(208,122,58,0.3), rgba(232,184,75,0.1)); }
 .about-icon.ascent { background: linear-gradient(135deg, rgba(45,106,79,0.3), rgba(64,145,108,0.1)); }
 .about-icon.career { background: linear-gradient(135deg, rgba(13,27,42,0.3), rgba(27,47,69,0.1)); }
 
@@ -79,8 +79,8 @@
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
   align-items: center;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(201, 151, 58, 0.04));
-  border: 1px solid rgba(201, 151, 58, 0.1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(208, 122, 58, 0.04));
+  border: 1px solid rgba(208, 122, 58, 0.1);
   border-radius: 16px;
   padding: 2.5rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
@@ -307,7 +307,7 @@
   .mission-stat {
     text-align: center;
     padding-top: 1rem;
-    border-top: 1px solid rgba(201, 151, 58, 0.1);
+    border-top: 1px solid rgba(208, 122, 58, 0.1);
   }
 
   .big-number {

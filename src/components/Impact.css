@@ -12,7 +12,7 @@
 .impact-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(201,151,58,0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(208,122,58,0.1) 0%, transparent 70%);
 }
 
 .impact-header {
@@ -60,7 +60,7 @@
 }
 
 .metric-gold {
-  border-color: rgba(201,151,58,0.3);
+  border-color: rgba(208,122,58,0.3);
 }
 .metric-gold::before { background: var(--gold); }
 
@@ -129,7 +129,7 @@
   transition: all 0.3s ease;
 }
 .story-card:hover {
-  border-color: rgba(201,151,58,0.35);
+  border-color: rgba(208,122,58,0.35);
   transform: translateY(-6px);
   box-shadow: 0 16px 40px rgba(0,0,0,0.08);
 }
