@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Clock from './Clock';
+import FocusDiagram from './FocusDiagram';
 import './Hero.css';
 
 export default function Hero() {
@@ -201,6 +202,18 @@ export default function Hero() {
             <p className="hero-sub scroll-fade-up" style={{ animationDelay: '1.2s' }}>
               Mentorship for first-generation immigrants navigating transition, integration, and early career growth.
             </p>
+
+            <div className="hero-quote scroll-fade-up" style={{ animationDelay: '1.35s' }}>
+              <p className="quote-text">
+                It's not about having time.<br />
+                <strong>It's about making time.</strong>
+              </p>
+              <p className="quote-subtext">
+                You don't need more time. You need more focus.
+              </p>
+            </div>
+
+            <FocusDiagram />
 
             <div className="hero-actions scroll-fade-up" style={{ animationDelay: '1.5s' }}>
               <a

@@ -1,0 +1,105 @@
+.focus-diagram-container {
+  margin: 3rem 0 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(201, 151, 58, 0.1), rgba(45, 106, 79, 0.08));
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(201, 151, 58, 0.3);
+  border-radius: 16px;
+  max-width: 550px;
+}
+
+.focus-canvas {
+  width: 100%;
+  height: 200px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.focus-labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.focus-label {
+  padding: 1rem;
+}
+
+.focus-label-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.5px;
+}
+
+.focus-label-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.focus-label.right .focus-label-text {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .focus-diagram-container {
+    margin: 2rem 0 1.5rem 0;
+    padding: 1.5rem;
+  }
+
+  .focus-canvas {
+    height: 160px;
+    margin-bottom: 1rem;
+  }
+
+  .focus-labels {
+    gap: 1rem;
+  }
+
+  .focus-label {
+    padding: 0.8rem;
+  }
+
+  .focus-label-title {
+    font-size: 0.85rem;
+  }
+
+  .focus-label-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .focus-diagram-container {
+    margin: 1.5rem 0 1rem 0;
+    padding: 1.2rem;
+  }
+
+  .focus-canvas {
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+
+  .focus-labels {
+    gap: 0.8rem;
+  }
+
+  .focus-label {
+    padding: 0.6rem;
+  }
+
+  .focus-label-title {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .focus-label-text {
+    font-size: 0.7rem;
+  }
+}
